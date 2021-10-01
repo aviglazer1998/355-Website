@@ -113,7 +113,13 @@ header {
 .work-experience {
 	background: #a1c6d7;
 }
+.MS {
+	padding-bottom:4em;
+}
 
+.SE-title{
+margin-bottom: -3em;
+}
 /* Education
 ------------------------------------*/
 .education {
