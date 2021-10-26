@@ -1,5 +1,4 @@
 $(document).ready(function () {
-	// Get Location
 	navigator.geolocation.getCurrentPosition(success, error);
 
 	function success(pos) {
