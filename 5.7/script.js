@@ -26,6 +26,8 @@ $(document).ready(function () {
 		var icon = data.weather[0].icon;
 		var pressure = data.main.pressure;
 		var humidity = data.main.humidity;
+		var wind = data.wind.speed;
+		var windDirection = data.wind.deg;
 
 		$("#city").html(city);
 		$("#temp").html(temp);
@@ -33,5 +35,7 @@ $(document).ready(function () {
 		$("#icon").attr("src", icon);
 		$(".pressure").html(pressure);
 		$(".humidity").html(humidity);
+		$(".wind").html(wind);
+		$(".windDirection").html(windDirection);
 	}
 });

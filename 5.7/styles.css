@@ -24,7 +24,7 @@ span {
 
 .container {
 	max-width: 550px;
-	height: 100vh;
+	height: 113vh;
 	border: 1px solid black;
 	margin: 0 auto;
 	text-align: center;
@@ -44,11 +44,9 @@ img {
 	width: 80px;
 }
 
-.pressure {
-	color: blue;
-	margin-top: 25px;
-}
-
+.pressure,
+.wind,
+.windDirection,
 .humidity {
 	color: blue;
 	margin-top: 25px;
