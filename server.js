@@ -26,3 +26,7 @@ app.get("/", (request, response) => {
 app.get("/public/HTML/resume.html", (request, response) => {
 	response.sendFile(__dirname + "/public/HTML/resume.html");
 });
+
+app.get("/public/HTML/weatherApp.html", (request, response) => {
+	response.sendFile(__dirname + "/public/HTML/weatherApp.html");
+});
