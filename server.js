@@ -22,3 +22,7 @@ app.listen(() => {
 app.get("/", (request, response) => {
 	response.sendFile(__dirname + "/public/HTML/index.html");
 });
+
+app.get("/public/HTML/resume.html", (request, response) => {
+	response.sendFile(__dirname + "/public/HTML/resume.html");
+});
