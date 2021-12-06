@@ -13,14 +13,12 @@ mongoose
 	.then((result) => app.listen(process.env.PORT || 8000))
 	.catch((err) => console.log(err));
 
+app.use(express.static("/public"));
+
 app.listen(() => {
 	console.log(`App listening on port 8000`);
 });
 
 app.get("/", (request, response) => {
-	response.sendFile(__dirname + "/index.html");
-});
-
-app.get("/5.7/index.html", (request, response) => {
-	response.sendFile(__dirname + "/5.7/index.html");
+	response.sendFile(__dirname + "/public/HTML/index.html");
 });
