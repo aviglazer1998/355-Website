@@ -35,60 +35,37 @@
 			font-size: xx-large;
 		}
 
-		li {
-			float: left;
-			display: inline-flex;
-		}
-
 		ul {
-			list-style-type: none;
-			margin: 0 auto;
-			padding: 0;
-			width: 500px;
-			background-color: #f1f1f1;
 		}
 
-		li a {
-			color: rgb(52, 52, 126);
+		#navbar-header {
+			color: white;
 			padding: 8px 16px;
 			text-decoration: none;
 			text-align: center;
+			list-style-type: none;
+			margin: 0 auto;
+			padding: 5;
+			width: 500px;
+			background-color: rgb(52, 52, 126);
 		}
 
-		li a:hover {
+		#navbar-header:hover {
 			background-color: #555;
 			color: yellow;
-			text-decoration: underline;
-		}
-
-		a:hover {
-			background-color: #555;
-			color: lightgreen;
-			text-decoration: underline;
-		}
-
-		.footer {
-			position: absolute;
-			bottom: 3em;
-			width: 100%;
-			height: 60px; /* Height of the footer */
 			text-decoration: underline;
 		}
 	</style>
 	<body>
 		<h1>CSCI 355 Dashboard</h1>
-		<nav class="navbar navbar-default">
-			<div class="navbar-header">
-				<ul class="nav navbar-nav">
-					<li><a href="https://github.com/aviglazer1998/355-Website">Github</a></li>
-					<li><a href="/public/HTML/weatherApp.html">Weather App</a></li>
-					<li><a href="/public/HTML/resume.html">Resume</a></li>
-					<li><a href="https://boilerplate-npm-4.aviglazer1998.repl.co">Managing Packages with NPM</a></li>
-					<li><a href="https://boilerplate-express-6.aviglazer1998.repl.co">Basic Node and Express</a></li>
-					<li><a href=""></a></li>
-				</ul>
-			</div>
-		</nav>
+		<div class="navbar-header">
+			<a href="/public/HTML/index.html">Home</a>
+			<a href="https://github.com/aviglazer1998/355-Website">Github</a>
+			<a href="/public/HTML/weatherApp.html">Weather App</a>
+			<a href="/public/HTML/resume.html">Resume</a>
+			<a href="https://boilerplate-npm-4.aviglazer1998.repl.co">Managing Packages with NPM</a>
+			<a href="https://boilerplate-express-6.aviglazer1998.repl.co">Basic Node and Express</a>
+		</div>
 	</body>
 </html>
 
