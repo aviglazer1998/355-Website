@@ -1,18 +1,19 @@
-ul li a {
+a {
 	font-size: 25px;
 	font: bold 11px Arial;
-	background-color: lightblue;
 	color: #333333;
 	padding: 2px 6px 2px 6px;
+	margin: 100px 10px 100px 10px;
 	border-top: 1px solid #cccccc;
 	border-right: 1px solid #333333;
 	border-bottom: 1px solid #333333;
 	border-left: 1px solid #cccccc;
 	text-align: center;
-  justify-content: center;
-  align-items: center;  
+	justify-content: center;
+	flex-wrap: wrap;
+	overflow-wrap: inherit;
+	align-items: center;
 }
-
 
 h1 {
 	font-size: 65px;
@@ -26,36 +27,9 @@ h2 {
 	font-size: xx-large;
 }
 
-li {
-	float: left;
-	display: inline-flex;
-}
-
-ul {
-	list-style-type: none;
-	margin: 0;
-	margin-left: 200px;
-	padding: 0;
-	width: 500px;
-	background-color: #f1f1f1;
-}
-
-li a {
-	color: rgb(52, 52, 126);
-	padding: 8px 16px;
-	text-decoration: none;
-  
-}
-
-li a:hover {
-	background-color: #555;
-	color: yellow;
-	text-decoration: underline;
-}
-
 a:hover {
-	background-color: #555;
-	color: lightgreen;
+	background-color: black;
+	color: white;
 	text-decoration: underline;
 }
 

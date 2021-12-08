@@ -8,64 +8,125 @@
 			align-items: center;
 			text-align: center;
 		}
-		ul li a {
-			font-size: 25px;
-			font: bold 11px Arial;
-			background-color: lightblue;
-			color: #333333;
-			padding: 2px 6px 2px 6px;
-			border-top: 1px solid #cccccc;
-			border-right: 1px solid #333333;
-			border-bottom: 1px solid #333333;
-			border-left: 1px solid #cccccc;
-			text-align: center;
-			justify-content: center;
-			align-items: center;
-		}
 
 		h1 {
-			font-size: 65px;
+			font-size: 30px;
 			line-height: 1;
 			justify-content: center;
-			text-decoration: underline;
-			color: rgb(52, 52, 126);
+			color: #66fcf1;
+			align-items: center;
+			text-decoration: none;
+		}
+
+		h2 {
+			font-size: 100px;
+			text-decoration: none;
+			line-height: 1;
+			justify-content: center;
+			color: #66fcf1;
 			align-items: center;
 		}
-		h2 {
-			font-size: xx-large;
+
+		p {
+			margin-left: 25%;
+			margin-right: 25%;
+			color: #c5c6c7;
 		}
 
-		ul {
-		}
-
-		#navbar-header {
+		a:hover {
 			color: white;
-			padding: 8px 16px;
-			text-decoration: none;
-			text-align: center;
-			list-style-type: none;
-			margin: 0 auto;
-			padding: 5;
-			width: 500px;
+			text-decoration: underline;
 			background-color: rgb(52, 52, 126);
 		}
 
-		#navbar-header:hover {
-			background-color: #555;
-			color: yellow;
-			text-decoration: underline;
+		a {
+			color: #1f2833;
+			background-color: #45a29e;
+			text-decoration: none;
+		}
+		.dropbtn {
+			background-color: #66fcf1;
+			color: #1f2833;
+			padding: 10px 20px;
+			border: none;
+			cursor: pointer;
+			position: fixed;
+			left: 50px;
+			top: 155px;
+		}
+
+		.dropdown {
+			position: fixed;
+			left: 0;
+			right: 0;
+			display: inline-block;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			padding: 12px 16px;
+			margin: 0;
+			text-decoration: none;
+			display: block;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #1f2833;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		.dropdown:hover .dropbtn {
+			background-color: black;
+		}
+
+		body {
+			background-image: url("/public/Images/background\ image.jpg");
+			min-height: 100%;
 		}
 	</style>
+
 	<body>
 		<h1>CSCI 355 Dashboard</h1>
-		<div class="navbar-header">
-			<a href="/public/HTML/index.html">Home</a>
-			<a href="https://github.com/aviglazer1998/355-Website">Github</a>
-			<a href="/public/HTML/weatherApp.html">Weather App</a>
-			<a href="/public/HTML/resume.html">Resume</a>
-			<a href="https://boilerplate-npm-4.aviglazer1998.repl.co">Managing Packages with NPM</a>
-			<a href="https://boilerplate-express-6.aviglazer1998.repl.co">Basic Node and Express</a>
+
+		<!-- <a href="/public/HTML/index.html">Home</a> -->
+
+		<div class="dropdown">
+			<button class="dropbtn">Menu</button>
+			<div class="dropdown-content">
+				<a href="https://github.com/aviglazer1998/355-Website">Github</a>
+				<a href="/public/HTML/weatherApp.html">Weather App</a>
+				<a href="/public/HTML/resume.html">Resume</a>
+				<a href="https://boilerplate-npm-4.aviglazer1998.repl.co">Managing Packages with NPM</a>
+				<a href="https://boilerplate-express-6.aviglazer1998.repl.co">Basic Node and Express</a>
+				<a href="https://chalkboard-355.herokuapp.com/">Chalkboard</a>
+				<a href="https://github.com/aviglazer1998/chalkboard">Chalkboard Github</a>
+				<a href="/public/HTML/backpack.html">Backpack LL</a>
+				<a href="/public/HTML/orders.html">Orders LL</a>
+				<a href="/public/HTML/feedback.html">Feedback LL</a>
+				<a href="https://boilerplate-project-timestamp-1.aviglazer1998.repl.co">Timestamp Microservice</a>
+				<a href="https://boilerplate-project-headerparser.aviglazer1998.repl.co">Request Header Microservice</a>
+				<a href="https://boilerplate-project-urlshortener-1.aviglazer1998.repl.co">URL Shortner Microservice</a>
+				<a href="https://boilerplate-project-exercisetracker.aviglazer1998.repl.co">Excercise Microservice</a>
+				<a href="https://boilerplate-project-filemetadata.aviglazer1998.repl.co">Metadata Microservice</a>
+			</div>
 		</div>
+
+		<h2>Basic Info</h2>
+		<p class="info">
+			I am a second semester senior in Queens College majoring in computer science with a minor in Economics. I am
+			orriginally from Texas but currently live in Queens, New York. I love to play basketball and watch movies. I am most
+			comfortable coding in HTML, CSS, Java, and SQL. I love to learn new languages and frameworks.
+		</p>
 	</body>
 </html>
 
