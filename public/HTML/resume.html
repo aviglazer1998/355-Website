@@ -1,377 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Avi Glazer, Tech Educator + Front-end Developer</title>
-  <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<style>
-  /*
-COLOR PALETTE
-https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
-#F7FFF7 - almost white
-#343434 - dark gray - almost black
-#2F3061 - blue dark
-#FFE66D - yellow
-#A1C6D7 - blue light
-*/
-
-/* Global styles
-------------------------------------*/
-html {
-	box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-	box-sizing: inherit;
-}
-
-body {
-	color: #343434;
-	margin: 0;
-	padding: 0;
-	font-family: "Montserrat", sans-serif;
-	font-size: 15px;
-	line-height: 1.5;
-}
-img {
-	width: 300px;
-}
-a {
-	color: #ffe66d;
-}
-a:hover {
-	text-decoration: none;
-}
-h1 {
-	font-size: 100px;
-	line-height: 1;
-}
-h2 {
-	font-size: 45px;
-}
-h1,
-h2 {
-	font-family: "Caveat", cursive;
-	font-weight: 400;
-	margin: 0;
-}
-.content-wrap {
-	max-width: 800px;
-	width: 85%;
-	margin: 0 auto;
-	padding: 60px 0;
-}
-.content-wrap-item-details-divider {
-	margin-top: 5px;
-}
-h3 {
-	margin-bottom: 0;
-}
-.item-details h3 + p {
-	font-style: italic;
-}
-.item-details h3 ~ p {
-	margin: 0;
-}
-.divider > section {
-	border-bottom: 1px dashed #343434;
-	padding: 25px 0;
-}
-.divider > section:last-of-type {
-	border-bottom: none;
-}
-
-/* Profile
-------------------------------------*/
-header {
-	background: #2f3061;
-	color: #f7fff7;
-}
-
-/* Projects
-------------------------------------*/
-.projects {
-	background: #f7fff7;
-}
-.projects a {
-	color: #2f3061;
-}
-.projects .btn {
-	color: #f7fff7;
-	background: #2f3061;
-	text-decoration: none;
-	padding: 8px;
-	border-radius: 4px;
-	display: inline-block;
-}
-.projects .btn:hover {
-	background: rgba(47, 48, 97, 80%);
-}
-.project-item {
-	overflow: hidden;
-}
-.project-item h3 {
-	margin-top: 0;
-}
-
-/* Work Experience
-------------------------------------*/
-.work-experience {
-	background: #a1c6d7;
-}
-.MS {
-	padding-bottom:4em;
-}
-
-.SE-title{
-margin-bottom: -3em;
-}
-/* Education
-------------------------------------*/
-.education {
-	background-image: url(../Images/joanna-kosinska-unsplash.png);
-	background-size: cover;
-	background-position: top right;
-	background-color: #ffe66d;
-	padding-bottom: 100px;
-}
-.education p {
-	width: 60%;
-}
-
-/* Contact Info
-------------------------------------*/
-footer {
-	background: #343434;
-	color: #f7fff7;
-}
-.contact-list {
-	list-style-type: none;
-}
-.contact-list a {
-	padding: 15px;
-	display: inline-block;
-	color: #f7fff7;
-}
-.contact-list a:hover {
-	color: #ffe66d;
-}
-
-/* Responsive
-------------------------------------*/
-@media screen and (min-width: 750px) {
-	header,
-	footer {
-		text-align: center;
-	}
-	.project-item img {
-		float: left;
-		margin-right: 20px;
-	}
-
-	.job-item {
-		display: grid;
-		grid-template-columns: 1fr 2fr;
-		column-gap: 20px;
-	}
-	.contact-list {
-		display: flex;
-		justify-content: center;
-	}
-}
-
-@media screen and (max-width: 749px) {
-	h1 {
-		font-size: 75px;
-		line-height: 0.9;
-		margin-bottom: 20px;
-	}
-	h2 {
-		line-height: 1;
-	}
-	.contact-list a {
-		padding: 5px;
-	}
-}
-
-</style>
-
-<body>
-  <main>
-    <!-- ***************  ABOUT / PROFILE  **************** -->
-    <header>
-      <div class="content-wrap">
-        <h1>Avi Glazer</h1>
-        <h2>CS Student + Full Stack Developer</h2>
-
-        <p>
-          As a developer, I am most comfortable coding with Java, SQL and Python. I have expereinece
-          creating
-          front-ends for apps using React Nativ as well as the backends of programs implimenting Java and SQL
-        </p>
-        <p>
-          In my free time i like to play video games and snowboard. My favorite mountain is in Colorado and is called <a
-            href=https://www.coppercolorado.com />Copper Mountain</a>
-        </p>
-      </div>
-    </header>
-
-    <!-- ************ PROJECTS / PORTFOLIO  ************** -->
-    <section class="projects">
-      <div class="content-wrap divider">
-        <h2>Featured Projects</h2>
-        <p>
-          View selected projects below. More information can be found at
-          <a href=https://github.com/aviglazer1998>Github.com</a>.
-        </p>
-
-        <!-- Project 1 -->
-        <section class="project-item">
-          <img id="email" src="../Images/Email.png"  alt="Email App" />
-          <h3>Email App</h3>
-          <p>
-            In this project i developed a program to generate company emails based on the users name and other details.
-          </p>
-          <a class="btn" href="https://github.com/aviglazer1998/Email-App-" target="_blank">Email App</a>
-        </section>
-
-        <!-- Project 2 -->
-        <section class="project-item">
-          <img src="../Images/roster.png" alt="Class Roster" />
-          <h3>CSCI 313 Roster Project</h3>
-          <p>
-            This Project created a class roster with insert, delete, and searching methods. Each submission of the
-            project uses a different key data structure to demonstrate runtimes and space complexities.
-          </p>
-          <a class="btn" href="https://github.com/aviglazer1998/313-Smith-Thompson" target="_blank">Class Roster</a>
-        </section>
-
-        <!-- ****************  WORK EXPERIENCE  ******************** -->
-        <section class="work-experience">
-          <div class="content-wrap-item-details-divider">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Avi Glazer, Tech Educator + Front-end Developer</title>
+      <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="css/styles.css" />
+   </head>
+   <style>
+      /*
+      COLOR PALETTE
+      https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+      #F7FFF7 - almost white
+      #343434 - dark gray - almost black
+      #2F3061 - blue dark
+      #FFE66D - yellow
+      #A1C6D7 - blue light
+      */
+      /* Global styles
+      ------------------------------------*/
+      html {
+      box-sizing: border-box;
+      }
+      *,
+      *:before,
+      *:after {
+      box-sizing: inherit;
+      }
+      body {
+      color: #343434;
+      margin: 0;
+      padding: 0;
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      }
+      img {
+      width: 300px;
+      }
+      a {
+      color: #ffe66d;
+      }
+      a:hover {
+      text-decoration: none;
+      }
+      h1 {
+      font-size: 100px;
+      line-height: 1;
+      }
+      h2 {
+      font-size: 45px;
+      }
+      h1,
+      h2 {
+      font-family: "Caveat", cursive;
+      font-weight: 400;
+      margin: 0;
+      }
+      .content-wrap {
+      max-width: 800px;
+      width: 85%;
+      margin: 0 auto;
+      padding: 60px 0;
+      }
+      .content-wrap-item-details-divider {
+      margin-top: 5px;
+      }
+      h3 {
+      margin-bottom: 0;
+      }
+      .item-details h3 + p {
+      font-style: italic;
+      }
+      .item-details h3 ~ p {
+      margin: 0;
+      }
+      .divider > section {
+      border-bottom: 1px dashed #343434;
+      padding: 25px 0;
+      }
+      .divider > section:last-of-type {
+      border-bottom: none;
+      }
+      /* Profile
+      ------------------------------------*/
+      header {
+      background: #2f3061;
+      color: #f7fff7;
+      }
+      /* Projects
+      ------------------------------------*/
+      .projects {
+      background: #f7fff7;
+      }
+      .projects a {
+      color: #2f3061;
+      }
+      .projects .btn {
+      color: #f7fff7;
+      background: #2f3061;
+      text-decoration: none;
+      padding: 8px;
+      border-radius: 4px;
+      display: inline-block;
+      }
+      .projects .btn:hover {
+      background: rgba(47, 48, 97, 80%);
+      }
+      .project-item {
+      overflow: hidden;
+      }
+      .project-item h3 {
+      margin-top: 0;
+      }
+      /* Work Experience
+      ------------------------------------*/
+      .work-experience {
+      background: #a1c6d7;
+      }
+      .MS {
+      padding-bottom:4em;
+      }
+      .SE-title{
+      margin-bottom: -3em;
+      }
+      /* Education
+      ------------------------------------*/
+      .education {
+      background-image: url(../Images/joanna-kosinska-unsplash.png);
+      background-size: cover;
+      background-position: top right;
+      background-color: #ffe66d;
+      padding-bottom: 100px;
+      }
+      .education p {
+      width: 60%;
+      }
+      /* Contact Info
+      ------------------------------------*/
+      footer {
+      background: #343434;
+      color: #f7fff7;
+      }
+      .contact-list {
+      list-style-type: none;
+      }
+      .contact-list a {
+      padding: 15px;
+      display: inline-block;
+      color: #f7fff7;
+      }
+      .contact-list a:hover {
+      color: #ffe66d;
+      }
+      /* Responsive
+      ------------------------------------*/
+      @media screen and (min-width: 750px) {
+      header,
+      footer {
+      text-align: center;
+      }
+      .project-item img {
+      float: left;
+      margin-right: 20px;
+      }
+      .job-item {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 20px;
+      }
+      .contact-list {
+      display: flex;
+      justify-content: center;
+      }
+      }
+      @media screen and (max-width: 749px) {
+      h1 {
+      font-size: 75px;
+      line-height: 0.9;
+      margin-bottom: 20px;
+      }
+      h2 {
+      line-height: 1;
+      }
+      .contact-list a {
+      padding: 5px;
+      }
+      }
+   </style>
+   <body>
+      <main>
+         <!-- ***************  ABOUT / PROFILE  **************** -->
+         <header>
+            <div class="content-wrap">
+               <h1>Avi Glazer</h1>
+               <h2>CS Student + Full Stack Developer</h2>
+               <p>
+                  As a developer, I am most comfortable coding with Java, SQL and Python. I have expereinece
+                  creating
+                  front-ends for apps using React Nativ as well as the backends of programs implimenting Java and SQL
+               </p>
+               <p>
+                  In my free time i like to play video games and snowboard. My favorite mountain is in Colorado and is called
+                  <a href="https://www.coppercolorado.com" >Copper Mountain</a>
+               </p>
+            </div>
+         </header>
+         <!-- ************ PROJECTS / PORTFOLIO  ************** -->
+         <section class="projects">
+            <div class="content-wrap divider">
+               <h2>Featured Projects</h2>
+               <p>
+                  View selected projects below. More information can be found at
+                  <a href="https://github.com/aviglazer1998">Github.com</a>
+               </p>
+               <!-- Project 1 -->
+               <section class="project-item">
+                  <img id="email" src="../Images/Email.png"  alt="Email App" />
+                  <h3>Email App</h3>
+                  <p>
+                     In this project i developed a program to generate company emails based on the users name and other details.
+                  </p>
+                  <a class="btn" href="https://github.com/aviglazer1998/Email-App-" target="_blank">Email App</a>
+               </section>
+               <!-- Project 2 -->
+               <section class="project-item">
+                  <img src="../Images/roster.png" alt="Class Roster" />
+                  <h3>CSCI 313 Roster Project</h3>
+                  <p>
+                     This Project created a class roster with insert, delete, and searching methods. Each submission of the
+                     project uses a different key data structure to demonstrate runtimes and space complexities.
+                  </p>
+                  <a class="btn" href="https://github.com/aviglazer1998/313-Smith-Thompson" target="_blank">Class Roster</a>
+               </section>
+            </div>
+         </section>
+         <!-- ****************  WORK EXPERIENCE  ******************** -->
+         <section class="work-experience">
+            <div class="content-wrap-item-details-divider">
             <h2 class="work-experience-title" >Work Experience</h2>
             <p>See my Linkedin on <a href="https://www.linkedin.com/in/avi-glazer-306871180/">LinkedIn</a>.
-              See my full <a href="/public/Avi_Glazer Resume.pdf">Resume</a>
+               See my full <a href="/public/Avi_Glazer Resume.pdf">Resume</a>
             </p>
             <br><br>
             <!-- Job 1 -->
             <section class="job-item">
-              <div class="job-details">
-                <h3>
-                  <p><i>Technology Summer Analyst</i><br>June 2021 - Aug 2021</p>
-                </h3>
-                <img class="MS" src="../Images/morgan stanley.png" alt="MS Logo">
-              </div>
-              <div class="job-summary">
-                <p>
-                  As a summer analyst i worked on the Digital Business Automation team to help integrate E*TRADE by
-                  writing java REST services for the clients.
-                </p>
-                <p>Key contributions:</p>
-                <ul>
-                  <li>
-                    Created Java REST services implementing Spring Boot to automate form entries for 8,000+ users daily.
-                  </li>
-                  <li>
-                    Utilized databases by applying Spring JPA and JDBC to gain information for the services
-                  </li>
-                  <li>
-                    Incorporated Jackson Object Mapper to parse JSON into java objects
-                  </li>
-                </ul>
-              </div>
+               <div class="job-details">
+                  <h3>
+                     <p><i>Technology Summer Analyst</i><br>June 2021 - Aug 2021</p>
+                  </h3>
+                  <img class="MS" src="../Images/morgan stanley.png" alt="MS Logo">
+               </div>
+               <div class="job-summary">
+                  <p>
+                     As a summer analyst i worked on the Digital Business Automation team to help integrate E*TRADE by
+                     writing java REST services for the clients.
+                  </p>
+                  <p>Key contributions:</p>
+                  <ul>
+                     <li>
+                        Created Java REST services implementing Spring Boot to automate form entries for 8,000+ users daily.
+                     </li>
+                     <li>
+                        Utilized databases by applying Spring JPA and JDBC to gain information for the services
+                     </li>
+                     <li>
+                        Incorporated Jackson Object Mapper to parse JSON into java objects
+                     </li>
+                  </ul>
+               </div>
             </section>
-
             <!-- Job 2 -->
             <section class="job-item">
-              <div class="job-details">
-                <h3>
-                  <p class="SE-title"><i>Software Engineer Intern</i><Br>
-                  Jan 2021 - May 2021</p>
-                </h3>
-                <img src="../Images/ida.png" alt="IDA Logo">
-
-              </div>
-              <div class="job-summary">
-                <p>
-                  Worked on a the Competitive Analysis team to develop features in an app specifically to find new
-                  businesses their competitors and competition.
-                </p>
-                <p>Key contributions:</p>
-                <ul>
-                  <li>Created the competitive analysis app page
-                    <ul>
-                      <li>
-                        Created 8.3% of the app’s wireframe screens using React Native.
-                      </li>
-                      <li>
-                        Found and Incorporated an API into the screen so users could pull data about their business
-                        competitors.
-                      <li>
-                        Implemented a database for users to save data utilizing Google Firebase. </li>
-                      <li>Created interactive slide deck template for consistent national workshop branding.</li>
-                    </ul>
-                </ul>
-              </div>
+               <div class="job-details">
+                  <h3>
+                     <p class="SE-title"><i>Software Engineer Intern</i><Br>
+                        Jan 2021 - May 2021
+                     </p>
+                  </h3>
+                  <img src="../Images/ida.png" alt="IDA Logo">
+               </div>
+               <div class="job-summary">
+                  <p>
+                     Worked on a the Competitive Analysis team to develop features in an app specifically to find new
+                     businesses their competitors and competition.
+                  </p>
+                  <p>Key contributions:</p>
+                  <ul>
+                     <li>
+                        Created the competitive analysis app page
+                        <ul>
+                           <li>
+                              Created 8.3% of the app’s wireframe screens using React Native.
+                           </li>
+                           <li>
+                              Found and Incorporated an API into the screen so users could pull data about their business
+                              competitors.
+                           <li>
+                              Implemented a database for users to save data utilizing Google Firebase. 
+                           </li>
+                           <li>Created interactive slide deck template for consistent national workshop branding.</li>
+                        </ul>
+                  </ul>
+               </div>
             </section>
-
             <!-- Job 3 -->
             <section class="job-item">
-              <div class="job-details">
-                <h3>               
-                  <p><i>Math Tutor</i><br>Jan 2020 - June 2021</p>                
-                  <img src="../Images/cuny.png" alt="CUNY Logo">
-                </h3>
-
-              </div>
-              <div class="job-summary">
-                <p>Key contributions:</p>
-                <ul>
-                  <li>
-                    Mentor 50+ high school students and prepare for math tests, regents, and class homework.
-                  </li>
-                  <li>
-                    Increase class productivity by 30% by answering questions and keeping students focused during class.
-                  </li>
-                  <li>
-                    Led individual classes and breakout rooms for struggeling students
-                  </li>
-                </ul>
-            </section>
-          </div>
-        </section>
-
-        <!-- *************  EDUCATION & CERTIFICATIONS *********** -->
-        <section class="education">
-          <div class="content-wrap item-details">
-            <h2>Education</h2>
-
-            <section>
-              <h3>Queens College - Flushing, NY</h3>
-              <p>Bachelor of Arts, 2019-2021</p>
-              <p> Major in Computer Science <br> Minor in Economics.</p>
-            </section>
-          </div>
-        </section>
-
-
-        <!-- ************  CONTACT INFO / SOCIAL MEDIA  ************ -->
-        <footer>
-          <div class="content-wrap">
-            <h2>Let's Keep in Touch!</h2>
-
-            <!-- Social media and contact links. Add or remove any networks. -->
-            <ul class="contact-list">
-              <li><a href="mailto:glazer.avi@gmail.com">Glazer.Avi@Gmail.com</a></li>
-              <li><a href="https://www.linkedin.com/in/avi-glazer-306871180/" target="_blank">LinkedIn</a></li>
-            </ul>
-          </div>
-        </footer>
-  </main>
-</body>
+               <div class="job-details">
+                  <h3>
+                     <p><i>Math Tutor</i><br>Jan 2020 - June 2021</p>
+                     <img src="../Images/cuny.png" alt="CUNY Logo">
+                  </h3>
+               </div>
+               <div class="job-summary">
+                  <p>Key contributions:</p>
+                  <ul>
+                     <li>
+                        Mentor 50+ high school students and prepare for math tests, regents, and class homework.
+                     </li>
+                     <li>
+                        Increase class productivity by 30% by answering questions and keeping students focused during class.
+                     </li>
+                     <li>
+                        Led individual classes and breakout rooms for struggeling students
+                     </li>
+                  </ul>
+            </div>
+         </section>
+         <!-- *************  EDUCATION & CERTIFICATIONS *********** -->
+         <section class="education">
+            <div class="content-wrap item-details">
+               <h2>Education</h2>
+               <section>
+                  <h3>Queens College - Flushing, NY</h3>
+                  <p>Bachelor of Arts, 2019-2021</p>
+                  <p> Major in Computer Science <br> Minor in Economics.</p>
+               </section>
+            </div>
+         </section>
+         <!-- ************  CONTACT INFO / SOCIAL MEDIA  ************ -->
+         <footer>
+            <div class="content-wrap">
+               <h2>Let's Keep in Touch!</h2>
+               <!-- Social media and contact links. Add or remove any networks. -->
+               <ul class="contact-list">
+                  <li><a href="mailto:glazer.avi@gmail.com">Glazer.Avi@Gmail.com</a></li>
+                  <li><a href="https://www.linkedin.com/in/avi-glazer-306871180/" target="_blank">LinkedIn</a></li>
+               </ul>
+            </div>
+         </footer>
+      </main>
+   </body>
 </html>
