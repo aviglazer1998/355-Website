@@ -13,13 +13,16 @@ mongoose
 	.then((result) => app.listen(process.env.PORT || 8000))
 	.catch((err) => console.log(err));
 
-app.use(express.static("/public"));
-
+app.use(express.static("public"));
 app.listen(() => {
 	console.log(`App listening on port 8000`);
 });
 
 app.get("/", (request, response) => {
+	response.sendFile(__dirname + "/public/HTML/index.html");
+});
+
+app.get("/public/HTML/index.html", (request, response) => {
 	response.sendFile(__dirname + "/public/HTML/index.html");
 });
 
@@ -29,4 +32,8 @@ app.get("/public/HTML/resume.html", (request, response) => {
 
 app.get("/public/HTML/weatherApp.html", (request, response) => {
 	response.sendFile(__dirname + "/public/HTML/weatherApp.html");
+});
+
+app.get("/public/HTML/backpack.html", (request, response) => {
+	response.sendFile(__dirname + "/public/HTML/backpack.html");
 });
