@@ -1,7 +1,7 @@
 body {
 	align-items: center;
 	text-align: center;
-	background-image: url("/public/Images/backgroundImages.png");
+	background-image: url("../Images/backgroundImages.png");
 	min-height: 100%;
 }
 
