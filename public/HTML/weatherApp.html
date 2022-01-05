@@ -14,7 +14,7 @@
 				}
 
 				function error() {
-					console.log("There was an error");
+					console.log('There was an error');
 				}
 
 				function weather(lat, long) {
@@ -35,14 +35,14 @@
 					var wind = data.wind.speed;
 					var windDirection = data.wind.deg;
 
-					$("#city").html(city);
-					$("#temp").html(temp);
-					$("#desc").html(desc);
-					$("#icon").attr("src", icon);
-					$(".pressure").html(pressure);
-					$(".humidity").html(humidity);
-					$(".wind").html(wind);
-					$(".windDirection").html(windDirection);
+					$('#city').html(city);
+					$('#temp').html(temp);
+					$('#desc').html(desc);
+					$('#icon').attr('src', icon);
+					$('.pressure').html(pressure);
+					$('.humidity').html(humidity);
+					$('.wind').html(wind);
+					$('.windDirection').html(windDirection);
 				}
 			});
 		</script>
@@ -57,7 +57,7 @@
 		}
 
 		h1 {
-			font-size: 16rem;
+			font-size: 6rem;
 		}
 
 		h2 {
@@ -76,7 +76,6 @@
 		.container {
 			max-width: 550px;
 			height: 113vh;
-			border: 1px solid black;
 			margin: 0 auto;
 			text-align: center;
 			display: grid;
